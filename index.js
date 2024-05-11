@@ -1,7 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 let sections = gsap.utils.toArray(".gallery-image");
 console.log(sections);
 
