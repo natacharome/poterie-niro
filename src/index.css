@@ -1,0 +1,208 @@
+:root {
+    --primary: #E7BBA2;
+    --secondary: #FFF8F3;
+    --accent: #8D4C4C;
+}
+
+@font-face {
+    font-family: 'aesthetic';
+    src: url('fonts/aesthetic-regular.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--secondary);
+    margin: 0;
+    padding: 0;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+p {
+    color: var(--accent)
+}
+
+h1 {
+    font-weight: 100;
+    font-family: "aesthetic", sans-serif;
+    margin: 0;
+    font-size: 13vw;
+    overflow: hidden;
+    color: var(--primary);
+}
+
+h1 .span1 {
+    display: block;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+h1 .span2 {
+    display: block;
+    animation: reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+h2 {
+    font-weight: 100;
+    color: var(--primary);
+    font-family: "aesthetic", sans-serif;
+    font-size: 150px;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 200px;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    padding: 0 30px;
+}
+
+.links {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.poterie-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.niro-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.stars {
+    position: absolute;
+    width: 80px;
+    right: 100px;
+}
+
+.line {
+    display: flex;
+    position: absolute;
+    bottom: -10vw;
+    z-index: -2;
+}
+
+.line-top {
+    width: 100vw;
+    opacity: 0;
+}
+
+.path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: drawLine 4s ease forwards;
+}
+
+.section2 {
+    max-height: 300px;
+    color: rgb(235, 205, 179);
+    margin-bottom: 100px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.niro-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.home-image {
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 64px;
+    border-radius: 20px;
+    box-shadow: 11px 17px 40px 15px rgba(237, 198, 175, 0.41);
+}
+
+.about-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+}
+
+.about-portrait {
+    height: 50vh;
+}
+
+.about-description {
+    display: flex;
+
+}
+
+.about-text {
+    padding: 30px;
+}
+
+.gallery {
+    display: flex;
+
+}
+
+.gallery-image {
+    border-radius: 30px;
+    margin-right: 20px;
+    height: 420px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.line-bottom {
+    position: relative;
+    bottom: 106px;
+}
+
+/* KEYFRAMES ANIMATIONS */
+@keyframes reveal {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
