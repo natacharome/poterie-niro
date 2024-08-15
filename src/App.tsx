@@ -1,11 +1,14 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-tertiary">
       <Header />
-      <h1 className="text-amber-500">Hello</h1>
+      <Home />
+      <Footer />
     </div>
   );
 }

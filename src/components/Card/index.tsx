@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { CardProps } from "./card.interface";
 
-const Card: React.FC<CardProps> = ({ id, data }) => {
-  const imageUrl = data?.Images[0].url;
+const Card: React.FC<CardProps> = ({ id, title, children }) => {
   return (
     <>
-      <div className="cursor-pointer rounded-md m-4">
-        <img
-          src={imageUrl}
-          alt="Card"
-          className="max-w-xs transition duration-500 ease-in-out hover:scale-105 object-cover w-80 h-80 rounded-md"
-        />
+      <div id={id} className="flex m-10 bg-white flex-col p-6 rounded-lg">
+        <h3 className=" font-primary font-semibold text-3xl border-b-2 p-2 border-gray-100 mb-5">
+          {title}
+        </h3>
+        <div>{children}</div>
       </div>
     </>
   );

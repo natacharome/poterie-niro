@@ -4,8 +4,9 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          'regal-blue': '#243c5a',
-          'primary': '#395246',
+          'primary': '#484040',
+          'secondary': '#FFB682',
+          'tertiary': '#F9F7F4'
         },
         screens: {
           'lg': '1300px',
@@ -13,7 +14,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        'base': ['"Montserrat Alternates"', 'sans-serif'],
+        'base': ['"Manrope"', 'sans-serif'],
       }
     },
     plugins: [

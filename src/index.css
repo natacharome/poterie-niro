@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-base text-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgb(255, 209, 182);
+    color: black;
+}
