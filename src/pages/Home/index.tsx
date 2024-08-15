@@ -1,25 +1,9 @@
 import Card from "../../components/Card";
 import Hero from "../../components/Hero";
-import image1 from "../../assets/1.jpeg";
-import image2 from "../../assets/2.jpeg";
-import image4 from "../../assets/4.jpeg";
-import image5 from "../../assets/5.jpeg";
 import portrait from "../../assets/portrait.png";
-import { useEffect, useState } from "react";
 import { useGetPoteries } from "../../hooks/useGetPoteries";
 
 const Home = () => {
-  const imageUrls = [
-    { url: image1, id: "image1", subtitle: "Subtitle 1", title: "Title 1" },
-    { url: portrait, id: "image2", subtitle: "Subtitle 2", title: "Title 2" },
-    { url: image4, id: "image3", subtitle: "Subtitle 3", title: "Title 3" },
-    { url: image5, id: "image4", subtitle: "Subtitle 4", title: "Title 4" },
-    { url: image1, id: "image1", subtitle: "Subtitle 1", title: "Title 1" },
-    { url: image2, id: "image2", subtitle: "Subtitle 2", title: "Title 2" },
-    { url: image4, id: "image3", subtitle: "Subtitle 3", title: "Title 3" },
-    { url: image5, id: "image4", subtitle: "Subtitle 4", title: "Title 4" },
-    { url: image5, id: "image4", subtitle: "Subtitle 4", title: "Title 4" },
-  ] as any;
   const { data, isLoading, isError, error } = useGetPoteries();
 
   if (isLoading) {

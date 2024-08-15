@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.svg";
 function Header() {
   return (
     <header className="flex items-center justify-between  sticky top-0 w-full bg-opacity-70 border-b bg-primary-isabelline-light backdrop-blur border-b-primary-isabelline-dark p-2">
-      <img className="h-16 ml-4" src={Logo} />
+      <img alt="logo" className="h-16 ml-4" src={Logo} />
       <nav className="flex">
         <ul>
           <li>

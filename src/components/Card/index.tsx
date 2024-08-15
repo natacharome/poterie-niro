@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CardProps } from "./card.interface";
 
 const Card: React.FC<CardProps> = ({ id, title, children }) => {
