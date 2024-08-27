@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-center p-20 mb-10">
+      <div className="flex flex-col justify-center p-10 md:p-20 mb-10">
         <h1 className="text-6xl md:text-8xl font-medium">Poterie Niro</h1>
         <p className="text-1xl mt-3">
           Une passionnée de poterie basée à
