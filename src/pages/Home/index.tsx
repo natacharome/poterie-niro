@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import Card from "../../components/Card";
 import Hero from "../../components/Hero";
-import portrait from "../../assets/portrait.png";
+import portrait from "../../assets/portrait.jpeg";
 import { useGetPoteries } from "../../hooks/useGetPoteries";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -54,7 +54,6 @@ const Home = () => {
     <>
       <div>
         <Hero />
-
         <div className="flex flex-col align-center justify-center mx-auto">
           <Card id="realisations" title="Réalisations">
             <div className="flex mb-4 flex-wrap">
@@ -93,19 +92,17 @@ const Home = () => {
             <div className="flex flex-col md:items-center md:flex-row">
               <div className="flex">
                 <img
-                  className="rounded-lg object-cover max-w-80"
+                  className="rounded-lg object-cover max-w-64"
                   src={portrait}
                   alt="portrait"
                 />
               </div>
-
               <div className="flex flex-col items-start justify-start mt-5 md:ml-9 ml-0 max-w-5xl">
                 <p className="text-xl md:text-2xl">
                   Je m’appelle Nicole Rome, je fais de la poterie depuis plus de
                   20 ans, cette activité me permet de révéler ma créactivité au
                   travers de différentes réalisations. Je fais de la poterie
-                  dans la région Annecienne avec Sylvie Debacker comme
-                  accompagnante.
+                  dans la région Annecienne.
                 </p>
                 <p className="text-xl md:text-2xl mt-10">
                   J’ai crée cette vitrine pour me permettre d’exposer mon
